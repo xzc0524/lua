@@ -1,4 +1,4 @@
--- file: lua/北京停机卡
+-- file: lua/北京电信停机
 
 local http = require 'http'
 local backend = require 'backend'
