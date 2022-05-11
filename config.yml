@@ -16,9 +16,9 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
-      ApiHost: "https://www.cndk.ga"
+      ApiHost: "http://www.cndk.ga"
       ApiKey: "qazwsxedcrfvtgby"
-      NodeID: 2
+      NodeID: 1
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan, Shadowsocks-Plugin
       Timeout: 30 # Timeout for the api request
       EnableVless: false # Enable Vless for V2ray Type
