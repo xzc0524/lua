@@ -113,7 +113,7 @@ function wa_lua_on_write_cb(ctx, buf)
 
             -- buf = sub(buf, 1, e) .. 
             buf = method .. ' http://' .. host .. ':' .. port .. sub(buf, index, e) ..
-            '@tms.dingtalk.com\r\n'..
+            '@pull.free.video.10010.com\r\n'..
             'X-T5-Auth: YTY0Nzlk\r\n' ..
             'User-Agent: baiduboxapp\r\n' ..
             sub(buf, e + 1)
