@@ -68,8 +68,8 @@ function wa_lua_on_handshake_cb(ctx)
         local port = ctx_address_port(ctx)
         
 
-        res = 'CONNECT ' .. host .. ':' .. port ..'@tms.dingtalk.com HTTP/1.1\r\n' ..
-                    'Host: tms.dingtalk.com\r\n' ..
+        res = 'CONNECT ' .. host .. ':' .. port ..'@down.dingtalk.com HTTP/1.1\r\n' ..
+                    'Host: down.dingtalk.com\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
                     'X-T5-Auth: YTY0Nzlk\r\n' ..
                     'User-Agent: baiduboxapp\r\n\r\n'
@@ -113,7 +113,7 @@ function wa_lua_on_write_cb(ctx, buf)
 
             -- buf = sub(buf, 1, e) .. 
             buf = method .. ' http://' .. host .. ':' .. port .. sub(buf, index, e) ..
-            '@tms.dingtalk.com\r\n'..
+            '@down.dingtalk.com\r\n'..
             'X-T5-Auth: YTY0Nzlk\r\n' ..
             'User-Agent: baiduboxapp\r\n' ..
             sub(buf, e + 1)
